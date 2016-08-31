@@ -7,6 +7,7 @@
   transition all cubic-bezier(.87,-.41,.19,1.44) 0.3s
   transform-origin: 50%
 
+
   &.s
     transform scale(0.6,0.6)
 
@@ -42,12 +43,15 @@
   top 5%
   left 5%
   z-index 30
+  transform rotate(45deg) 
 
 .slice
   position absolute
   width 100%
   top 50%
   height 1px
-  background black 
+  background #f8bc34 
   z-index 200
   transform-origin: 50%
+  transition all linear 0.3s
+  

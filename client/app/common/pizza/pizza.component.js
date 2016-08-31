@@ -5,7 +5,7 @@ import './pizza.styl';
 let pizzaComponent = {
   restrict: 'E',
   bindings: {
-    "size" : "="
+    "size" : "<"
   },
   template,
   controller

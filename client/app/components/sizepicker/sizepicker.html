@@ -1,5 +1,7 @@
 <div class="container">
-  <h1>{{ $ctrl.name }}</h1>
+  <h4>SELECT A SIZE</h4>
+  <div class="next-btn" ui-sref="home">Select</div>
   <pizza size="$ctrl.size"></pizza>
-  <sizeselector size-selected="$ctrl.sizeSelected"><sizeselector>
+  <sizeselector size-selected="$ctrl.sizeSelected"></sizeselector>
+  <div class="serving-amount">Serves {{$ctrl.servings}}</div>
 </div>

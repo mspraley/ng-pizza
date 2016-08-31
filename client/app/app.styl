@@ -26,3 +26,40 @@ h4
   color white
   text-transform uppercase
   margin 10px 0
+
+.next-btn
+  position absolute
+  bottom 0px
+  left 0px
+  background #006b9c
+  color #79b5ce
+  height 50px
+  width 100%
+  padding-right 30px
+  box-sizing border-box
+  line-height 50px
+  text-align right
+
+
+.slide 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+.slide.ng-enter,
+.slide.ng-leave 
+  transition: all 1s ease;
+
+.slide.ng-enter 
+  transform: translate(100%, 0);
+
+.slide.ng-enter-active 
+  transform: translate(0, 0);
+
+.slide.ng-leave 
+  transform: translate(0, 0);
+
+.slide.ng-leave-active 
+  transform: translate(-100%, 0);
