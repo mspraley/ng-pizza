@@ -1,0 +1,15 @@
+<header>
+</header>
+<main>
+  <div>
+    <div class="container" ng-class="{'open': $ctrl.open == true, 'card-selected' : $ctrl.cardSelected == true, 'payment-success': $ctrl.paymentSuccess == true}">
+      {{$ctrl.openCardSelector}}
+      <pizzabox></pizzabox>
+      <div class="pay-due-container">
+        <div class="total-due-label">Total Due</div>
+        <div class="pay-due">$18.75</div>
+      </div>
+      <payment open="$ctrl.openCardSelector" status="$ctrl.paymentStatus" cards="$ctrl.cards" select-card="$ctrl.selectCard"></payment>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,26 @@
+<div class="payment">
+  <div class="pay-now-btn" ng-click="$ctrl.open()">Pay Now</div>
+  <div class="select-card-label">SELECT CARD</div>
+  <div class="card-selector-wrapper">
+    <div class="payment-status">{{$ctrl.status}}</div>
+    <div class="checkmark-container">
+      <div class="checkmark"></div>
+    </div>
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
+    <div class="card-selector">
+      <div class="card-container" ng-repeat="card in $ctrl.cards">
+        <div class="card" ng-click="$ctrl.selectCard()">
+          <div class="card-chip"></div>
+          <div class="card-number">{{card.number}}</div>
+          <div class="card-name">{{card.name}}</div>
+          <div class="expiration-container">
+            <div class="valid-thru">VALID THRU</div>
+            <div class="expiration-date">{{card.expirationDate}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
