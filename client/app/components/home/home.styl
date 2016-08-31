@@ -10,6 +10,8 @@
   background #0074ae
   border-radius 10px
   overflow hidden
+  text-align center
+  color white
 
   &.open
     .payment 
@@ -23,6 +25,12 @@
       display: none
     .total-due-label 
       display none
+    
+    .header
+      transform scale(0,0)
+
+    .box-container
+      margin-top 20px  
 
   &.card-selected
     .select-card-label
@@ -56,6 +64,9 @@
       transform scale(1,1)
 
 
+.header
+  transtion all 0.2s ease-in    
+
 .pay-due-container 
   width 100%
   color white
@@ -65,5 +76,5 @@
   margin-top 40px
 
 .pay-due 
-  font-size 40px
+  font-size 30px
 
