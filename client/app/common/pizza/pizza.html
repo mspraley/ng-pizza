@@ -1,5 +1,7 @@
-<div class="pizza">
+<div class="pizza" ng-class="$ctrl.size">
   <div class="crust"></div>
   <div class="sauce"></div>
-  <div class="main"></div>
+  <div class="main">
+    <div ng-repeat="slice in $ctrl.slices" ng-style="{'transform': 'rotate('+(180/$ctrl.slices.length)*$index+'deg)'}" class="slice"></div>
+  </div>
 </div>

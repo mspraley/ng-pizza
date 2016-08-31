@@ -6,6 +6,16 @@ let sizepickerModule = angular.module('sizepicker', [
   uiRouter
 ])
 
+.config(($stateProvider) => {
+  "ngInject";
+
+  $stateProvider
+    .state('sizepicker', {
+      url: '/sizepicker',
+      component: 'sizepicker'
+    });
+})
+
 .component('sizepicker', sizepickerComponent)
 
 .name;

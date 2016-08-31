@@ -4,7 +4,9 @@ import './pizza.styl';
 
 let pizzaComponent = {
   restrict: 'E',
-  bindings: {},
+  bindings: {
+    "size" : "="
+  },
   template,
   controller
 };

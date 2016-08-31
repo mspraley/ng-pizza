@@ -1,7 +1,7 @@
 <div>
   <div class="sizes">
-    <div class="size small">S</div>
-    <div class="size medium">M</div>
-    <div class="size large">L</div>
+    <div class="size small" ng-class="{'selected' : $ctrl.size == 's'}" ng-click="$ctrl.selectSize('s')">S</div>
+    <div class="size medium" ng-class="{'selected' : $ctrl.size == 'm'}" ng-click="$ctrl.selectSize('m')">M</div>
+    <div class="size large"  ng-class="{'selected' : $ctrl.size == 'l'}" ng-click="$ctrl.selectSize('l')">L</div>
   </div>
 </div>

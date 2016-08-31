@@ -4,7 +4,9 @@ import './sizeselector.styl';
 
 let sizeselectorComponent = {
   restrict: 'E',
-  bindings: {},
+  bindings: {
+    sizeSelected : '='
+  },
   template,
   controller
 };
