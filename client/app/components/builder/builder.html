@@ -1,8 +1,10 @@
-<div class="container" ng-class="$ctrl.state">
+<div class="container" ng-class="$ctrl.stateClass">
   <h4>SELECT A SIZE</h4>
-  <div class="next-btn" ng-click="$ctrl.next()">Select</div>
+  <div class="next-btn" ng-click="$ctrl.next()">Next</div>
+  <div class="prev-btn" ng-click="$ctrl.prev()">Previous</div>
   <pizza size="$ctrl.size" toppings="$ctrl.selectedToppings"></pizza>
   <sizeselector size-selected="$ctrl.sizeSelected"></sizeselector>
   <toppings toppings="$ctrl.toppings" select-topping="$ctrl.selectTopping"></toppings>
+  <extras extras="$ctrl.extras"></extras>
   <div class="serving-amount">Serves {{$ctrl.servings}}</div>
 </div>

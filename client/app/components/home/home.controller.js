@@ -3,11 +3,13 @@ class HomeController {
     'ngInject';
     this.name = 'home';
     var ctrl = this;
+    
     ctrl.open = false;
     ctrl.cardSelected = false;
     ctrl.paymentStatus = "Processing..."
     ctrl.paymentSuccess = false
 
+    //fake card data
     this.cards = [
       {
         number : 'XXXX  XXXX  XXXX  8543',
@@ -20,6 +22,7 @@ class HomeController {
         expirationDate : '02/20'
       }
     ]
+
     this.openCardSelector = function() {
       ctrl.open = true;
     }

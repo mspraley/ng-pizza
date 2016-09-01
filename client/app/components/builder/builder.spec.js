@@ -1,16 +1,16 @@
-import SizepickerModule from './sizepicker'
-import SizepickerController from './sizepicker.controller';
-import SizepickerComponent from './sizepicker.component';
-import SizepickerTemplate from './sizepicker.html';
+import BuilderModule from './Builder'
+import BuilderController from './Builder.controller';
+import BuilderComponent from './Builder.component';
+import BuilderTemplate from './Builder.html';
 
-describe('Sizepicker', () => {
+describe('Builder', () => {
   let $rootScope, makeController;
 
-  beforeEach(window.module(SizepickerModule));
+  beforeEach(window.module(BuilderModule));
   beforeEach(inject((_$rootScope_) => {
     $rootScope = _$rootScope_;
     makeController = () => {
-      return new SizepickerController();
+      return new BuilderController();
     };
   }));
 
@@ -30,20 +30,20 @@ describe('Sizepicker', () => {
     // template specs
     // tip: use regex to ensure correct bindings are used e.g., {{  }}
     it('has name in template [REMOVE]', () => {
-      expect(SizepickerTemplate).to.match(/{{\s?\$ctrl\.name\s?}}/g);
+      expect(BuilderTemplate).to.match(/{{\s?\$ctrl\.name\s?}}/g);
     });
   });
 
   describe('Component', () => {
       // component/directive specs
-      let component = SizepickerComponent;
+      let component = BuilderComponent;
 
       it('includes the intended template',() => {
-        expect(component.template).to.equal(SizepickerTemplate);
+        expect(component.template).to.equal(BuilderTemplate);
       });
 
       it('invokes the right controller', () => {
-        expect(component.controller).to.equal(SizepickerController);
+        expect(component.controller).to.equal(BuilderController);
       });
   });
 });
