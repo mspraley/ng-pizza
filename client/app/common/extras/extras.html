@@ -1,0 +1,7 @@
+<div class="extras">
+  <div class="list">
+    <h4>DRINKS</h4>
+    <div ng-repeat="drink in $ctrl.extras.drinks" ng-class="[drink.name, {'active' : drink.selected == true}]" class="choice" ng-click="$ctrl.addExtra(topping)">
+    <div class="bg"></div>
+  </div>
+</div>
