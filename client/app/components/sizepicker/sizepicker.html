@@ -1,7 +1,8 @@
-<div class="container">
+<div class="container" ng-class="$ctrl.state">
   <h4>SELECT A SIZE</h4>
-  <div class="next-btn" ui-sref="home">Select</div>
-  <pizza size="$ctrl.size"></pizza>
+  <div class="next-btn" ng-click="$ctrl.next()">Select</div>
+  <pizza size="$ctrl.size" toppings="$ctrl.selectedToppings"></pizza>
   <sizeselector size-selected="$ctrl.sizeSelected"></sizeselector>
+  <toppings toppings="$ctrl.toppings" select-topping="$ctrl.selectTopping"></toppings>
   <div class="serving-amount">Serves {{$ctrl.servings}}</div>
 </div>

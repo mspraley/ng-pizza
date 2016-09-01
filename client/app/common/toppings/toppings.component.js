@@ -4,7 +4,10 @@ import './toppings.styl';
 
 let toppingsComponent = {
   restrict: 'E',
-  bindings: {},
+  bindings: {
+    toppings : '<',
+    selectTopping : '='
+  },
   template,
   controller
 };

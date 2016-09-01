@@ -1,5 +1,41 @@
-.pepperoni-choice
+.toppings
+  transition all ease-in 0.2s
+  float left
+
+.list 
+  margin-top 60px
+  padding 20px
+  margin-left 10px
+
+.choice
   width 50px
   height 50px
-  background white
   border-radius 50%
+  background-size 100%
+  float left
+  margin-right 15px
+  margin-bottom 25px
+  position: relative
+  transition all cubic-bezier(.87,-.41,.19,1.44) 0.3s
+
+  &.active
+    background-color white
+    transform: scale(1.2,1.2)
+
+.pepperoni
+  background-image: embedurl('../../img/pepperoni.png');
+
+.mushroom
+  background-image: embedurl('../../img/mushroom.png');
+
+.onion
+  background-image: embedurl('../../img/onion.png');
+
+.olive
+  background-image: embedurl('../../img/olive.png');
+
+.pepper
+  background-image: embedurl('../../img/pepper.png');
+
+.bacon
+  background-image: embedurl('../../img/bacon.png');

@@ -13,9 +13,21 @@
   text-align center
   color white
 
+  &.size
+    .toppings
+      transform translateX(100%)
+
+  &.toppings
+    .toppings
+      transform translateX(0%)
+      
+    .sizeselector
+      left -100%
+
 .serving-amount
   position absolute
   bottom 70px
   left 0px
   width 100%
   text-align center
+
