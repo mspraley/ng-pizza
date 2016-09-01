@@ -4,6 +4,7 @@ class PizzaController {
 
     this.slices = [1, 2, 3];
     var ctrl = this;
+    
     ctrl.active = false
     ctrl.size = 'm';
 

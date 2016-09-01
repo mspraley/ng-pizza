@@ -12,6 +12,8 @@ class ToppingsController {
           ctrl.toppings[i].selected = !ctrl.toppings[i].selected;
         }
       }
+
+      //prevent double toppings for now
       if (!found) {
         this.selectTopping(topping);
       }
